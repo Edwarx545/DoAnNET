@@ -44,6 +44,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TxtAmt = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.WageStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,7 +58,7 @@
             this.StuId.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.StuId.Location = new System.Drawing.Point(94, 171);
+            this.StuId.Location = new System.Drawing.Point(32, 171);
             this.StuId.Name = "StuId";
             this.StuId.Size = new System.Drawing.Size(121, 33);
             this.StuId.TabIndex = 84;
@@ -66,7 +68,7 @@
             // 
             this.DatePay.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DatePay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DatePay.Location = new System.Drawing.Point(510, 171);
+            this.DatePay.Location = new System.Drawing.Point(426, 171);
             this.DatePay.Name = "DatePay";
             this.DatePay.Size = new System.Drawing.Size(196, 33);
             this.DatePay.TabIndex = 83;
@@ -75,7 +77,7 @@
             // 
             this.TxtStuName.Enabled = false;
             this.TxtStuName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtStuName.Location = new System.Drawing.Point(263, 171);
+            this.TxtStuName.Location = new System.Drawing.Point(196, 171);
             this.TxtStuName.Name = "TxtStuName";
             this.TxtStuName.Size = new System.Drawing.Size(201, 33);
             this.TxtStuName.TabIndex = 82;
@@ -84,7 +86,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(510, 129);
+            this.label5.Location = new System.Drawing.Point(426, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 25);
             this.label5.TabIndex = 78;
@@ -94,7 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(756, 129);
+            this.label4.Location = new System.Drawing.Point(641, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 25);
             this.label4.TabIndex = 79;
@@ -104,21 +106,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(94, 129);
+            this.label1.Location = new System.Drawing.Point(32, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.Size = new System.Drawing.Size(121, 25);
             this.label1.TabIndex = 80;
-            this.label1.Text = "Student Id";
+            this.label1.Text = "Employee Id";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(263, 129);
+            this.label3.Location = new System.Drawing.Point(196, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.Size = new System.Drawing.Size(155, 25);
             this.label3.TabIndex = 81;
-            this.label3.Text = "Student Name";
+            this.label3.Text = "Employee Name";
             // 
             // dataGridView1
             // 
@@ -159,9 +161,9 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(426, 345);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 25);
+            this.label6.Size = new System.Drawing.Size(105, 25);
             this.label6.TabIndex = 72;
-            this.label6.Text = "Fees List";
+            this.label6.Text = "Wages List";
             // 
             // label2
             // 
@@ -196,16 +198,40 @@
             // TxtAmt
             // 
             this.TxtAmt.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtAmt.Location = new System.Drawing.Point(756, 171);
+            this.TxtAmt.Location = new System.Drawing.Point(641, 174);
             this.TxtAmt.Name = "TxtAmt";
             this.TxtAmt.Size = new System.Drawing.Size(179, 33);
             this.TxtAmt.TabIndex = 82;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(831, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 25);
+            this.label7.TabIndex = 85;
+            this.label7.Text = "Status";
+            // 
+            // WageStatus
+            // 
+            this.WageStatus.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WageStatus.FormattingEnabled = true;
+            this.WageStatus.Items.AddRange(new object[] {
+            "Đã giao",
+            "Chưa giao"});
+            this.WageStatus.Location = new System.Drawing.Point(831, 174);
+            this.WageStatus.Name = "WageStatus";
+            this.WageStatus.Size = new System.Drawing.Size(121, 33);
+            this.WageStatus.TabIndex = 86;
             // 
             // Fees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 698);
+            this.Controls.Add(this.WageStatus);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.StuId);
             this.Controls.Add(this.DatePay);
             this.Controls.Add(this.TxtAmt);
@@ -249,5 +275,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private TextBox TxtAmt;
+        private Label label7;
+        private ComboBox WageStatus;
     }
 }

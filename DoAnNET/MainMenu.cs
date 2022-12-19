@@ -20,7 +20,7 @@ namespace DoAnNET
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Attendances attendances = new Attendances();
-            attendances.MdiParent = this;
+            //attendances.MdiParent = this;
             attendances.Show();
             
         }
@@ -54,7 +54,7 @@ namespace DoAnNET
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Fees fees = new Fees();
-            fees.MdiParent = this;
+            //fees.MdiParent = this;
             fees.Show();
         }
 

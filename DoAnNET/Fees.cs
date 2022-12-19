@@ -73,17 +73,18 @@ namespace DoAnNET
                 sda.Fill(dt);
                 if (dt.Rows[0][0].ToString() == "1")
                 {
-                    MessageBox.Show("there is no due for this month");
+                    MessageBox.Show("Tháng này vẫn chưa có nhân viên nào được thêm vào");
                 }
                 else
                 {                                          
-                        SqlCommand cmd = new SqlCommand("insert into Fee(StId, StName, Month, Amt) values (@Stid,@Stname,@month,@amt)", con);
+                        SqlCommand cmd = new SqlCommand("insert into Fee(StId, StName, Month, Amt, WageStatus) values (@Stid,@Stname,@month,@amt,@WageStatus)", con);
                         cmd.Parameters.AddWithValue("@Stid", StuId.Text);
                         cmd.Parameters.AddWithValue("@Stname", TxtStuName.Text);
                         cmd.Parameters.AddWithValue("@month", paymentperiode);
                         cmd.Parameters.AddWithValue("@amt", TxtAmt.Text);
+                        cmd.Parameters.AddWithValue("@WageStatus", WageStatus.Text);
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show(" Đã Thêm phí thành công.");
+                        MessageBox.Show(" Đã thêm lương thành công.");
                         con.Close();
                         DisplayFee();
                         Reset();                    
