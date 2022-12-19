@@ -17,7 +17,7 @@ namespace DoAnNET
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Downloads\DoAnNET\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Baitap\Quanlinhanvien\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
         private void CountStudent()
         {
             con.Open();          

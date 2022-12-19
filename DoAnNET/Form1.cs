@@ -34,6 +34,7 @@ namespace DoAnNET
                 if (ketqua >= 1)
                 {
                     MainMenu SV = new MainMenu();
+                    this.Hide();
                     SV.Show();
                 }
                 else

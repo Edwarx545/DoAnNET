@@ -23,6 +23,7 @@ namespace DoAnNET
 
        
         }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Baitap\Quanlinhanvien\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
         private void DisplayStudent()
         {
             con.Open();
@@ -101,7 +102,7 @@ namespace DoAnNET
             {
                 try
                 {
-                    SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
+                    SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Baitap\Quanlinhanvien\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
                     connect.Open();
                     SqlCommand cmd = new SqlCommand("delete from Student where StId = @StId", connect);
                     cmd.Parameters.AddWithValue("StId", Key);

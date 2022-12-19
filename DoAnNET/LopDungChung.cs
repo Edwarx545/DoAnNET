@@ -10,7 +10,7 @@ namespace DoAnNET
 {
     class LopDungChung
     {
-        string diachi = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Downloads\DoAnNET\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True";
+        string diachi = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Baitap\Quanlinhanvien\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True";
         SqlConnection conn;
 
         public LopDungChung()

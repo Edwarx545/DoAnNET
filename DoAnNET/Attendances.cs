@@ -46,7 +46,7 @@ namespace DoAnNET
             }
             con.Close();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Baitap\Quanlinhanvien\DoAnNET\DoAnNET\SchoolManager.mdf;Integrated Security=True");
         private void DisplayAttendance()
         {
             con.Open();
@@ -167,6 +167,11 @@ namespace DoAnNET
             {
                 Key = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

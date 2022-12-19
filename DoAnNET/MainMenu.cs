@@ -65,6 +65,10 @@ namespace DoAnNET
             form1.Show();
         }
 
-        
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
+        }
     }
 }
